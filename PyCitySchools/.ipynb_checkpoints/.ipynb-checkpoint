@@ -442,26 +442,14 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 44,
+   "execution_count": 46,
    "metadata": {},
-   "outputs": [
-    {
-     "ename": "TypeError",
-     "evalue": "'type' object is not subscriptable",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
-      "\u001b[0;32m<ipython-input-44-c8160d681eea>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mpd\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mDataFrame\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"schoolSummary\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-      "\u001b[0;31mTypeError\u001b[0m: 'type' object is not subscriptable"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
-    "schoolNames = \n",
+    "schoolNames = school_data_complete[\"school_name\"].unique()\n",
     "\n",
     "schoolSummary = pd.DataFrame({\n",
-    "    \"School Name\":[]\n",
+    "    \"School Name\":[schoolNames]\n",
     "})"
    ]
   },
